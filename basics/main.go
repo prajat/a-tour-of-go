@@ -6,10 +6,7 @@ import (
 )
 
 func main() {
-	//functions.go
-	fmt.Println(add(42, 13))
-
-	//functions-continued
+	//functions
 	fmt.Println(add(42, 13))
 
 	//multiple-results
@@ -18,4 +15,11 @@ func main() {
 
 	//exported-names
 	fmt.Println(math.Pi)
+
+	//naked-return
+	fmt.Println(split(54))
+
+	//variables
+	var i int
+	fmt.Println(i, c, python, java)
 }
