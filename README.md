@@ -10,6 +10,7 @@ Practicing the official "A Tour of Go" example programs for revision and hands-o
 - Quick start
 - Project structure
 - Notes & tips
+- Editor & Git
 - Resources
 - License
 
@@ -63,11 +64,22 @@ Adjust the structure to match the content you add.
 - Run `gofmt -w .` to keep formatting consistent.
 - Use `go vet` and `golint` (or `staticcheck`) to catch issues and improve code quality.
 
+## Editor & Git
+
+- Editor: I use Zed for editing — a lightweight, fast editor with modern ergonomics. Configure Zed with Go extensions (language server) for auto-completion and formatting.
+- Git: I use lazygit for interactive, terminal-based Git workflow. It's useful for staging, committing, rebasing, and reviewing diffs quickly.
+- Recommended workflow:
+  1. Edit code in Zed with gopls (Go language server) enabled.
+  2. Run `gofmt -w .` or configure format-on-save.
+  3. Use lazygit to stage and commit changes, and to push branches.
+
 ## Resources
 
 - A Tour of Go — https://go.dev/tour/list
 - Official Go documentation — https://go.dev/doc/
 - Go modules — https://go.dev/ref/mod
+- Zed editor — https://zed.dev
+- lazygit — https://github.com/jesseduffield/lazygit
 
 ## License
 
@@ -79,10 +91,6 @@ MIT License — see LICENSE file for details.
 
 If you want, I can:
 
-- Add specific example filenames and short code snippets from your repo.
-- Generate a linked table of contents (GitHub-flavored Markdown anchors).
-- Create a GitHub Actions workflow to run `go test`, `gofmt`, or static analysis.# A Tour of Go
-
-## Practicing the simple official tour-of-go program for revision
-
-### https://go.dev/tour/list
+- Add Zed configuration snippets (settings, recommended extensions).
+- Add a sample lazygit config and common commands.
+- Insert example filenames and short code snippets from this repo.
