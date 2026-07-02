@@ -88,9 +88,3 @@ Specify a license for your repository (MIT, Apache-2.0, etc.). Example:
 MIT License — see LICENSE file for details.
 
 ---
-
-If you want, I can:
-
-- Add Zed configuration snippets (settings, recommended extensions).
-- Add a sample lazygit config and common commands.
-- Insert example filenames and short code snippets from this repo.
