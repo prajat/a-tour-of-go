@@ -54,4 +54,9 @@ func main() {
 	v := 42.66    // -> float64
 	K := int32(v) // -> int32
 	fmt.Printf("v is of type %T, %T, value of K -> %v\n", v, K, K)
+
+	//loops
+	fmt.Println(forloop())
+	fmt.Println(forcontinued())
+	fmt.Println(forlikewhile())
 }
