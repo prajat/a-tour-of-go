@@ -59,4 +59,11 @@ func main() {
 	fmt.Println(forloop())
 	fmt.Println(forcontinued())
 	fmt.Println(forlikewhile())
+	fmt.Println(pow(3, 2, 10))
+	fmt.Println(pow(3, 3, 20))
+
+	//switch-case
+	operatingSystem()
+	whenSaturday()
+	greet()
 }
