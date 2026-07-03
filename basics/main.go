@@ -66,4 +66,9 @@ func main() {
 	operatingSystem()
 	whenSaturday()
 	greet()
+	deferDemo()
+	deferStackDemo()
+	pointersDemo()
+	vertex()
+	arrayDemo()
 }
