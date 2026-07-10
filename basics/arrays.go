@@ -1,6 +1,8 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 /*Arrays
 The type [n]T is an array of n values of type T.
@@ -98,8 +100,47 @@ func arrayDemo() {
 
 	sl = append(sl, 14, 15, 16)
 	printSlice(sl)
+
+	/*Range
+	The range form of the for loop iterates over a slice or map.
+	When ranging over a slice, two values are returned for each iteration. The first is the index, and the second is a copy of the element at that index. */
+
+	pow := []int{1, 2, 4, 8, 16, 32, 64, 128}
+	for i, v := range pow {
+		fmt.Printf("2**%d = %d\n", i, v)
+	}
+
+	powOfTwo := make([]int, 10)
+	for i := range powOfTwo {
+		powOfTwo[i] = 1 << uint(i)
+	}
+	for _, value := range powOfTwo {
+		fmt.Printf("%d\n", value)
+	}
 }
 
 func printSlice(s []int) {
 	fmt.Printf("len=%d cap=%d %v\n", len(s), cap(s), s)
+}
+
+/*Implement Pic. It should return a slice of length dy, each element of which is a slice of dx 8-bit unsigned integers. When you run the program, it will display your picture, interpreting the integers as grayscale (well, bluescale) values.
+
+The choice of image is up to you. Interesting functions include (x+y)/2, x*y, and x^y.
+
+(You need to use a loop to allocate each []uint8 inside the [][]uint8.)
+
+(Use uint8(intValue) to convert between types.) */
+
+func Pic(dx, dy int) [][]uint8 {
+	img := make([][]uint8, dy)
+	for y := 0; y < dy; y++ {
+		row := make([]uint8, dx)
+		for x := 0; x < dx; x++ {
+			row[x] = uint8((x + y) / 2)
+			//row[x] = uint8(x * y)
+			//row[x] = uint8(math.Pow(float64(x), float64(y)))
+		}
+		img[y] = row
+	}
+	return img
 }

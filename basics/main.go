@@ -71,4 +71,5 @@ func main() {
 	pointersDemo()
 	vertex()
 	arrayDemo()
+	mapsDemo()
 }
