@@ -72,4 +72,5 @@ func main() {
 	vertex()
 	arrayDemo()
 	mapsDemo()
+	funcDemo()
 }
