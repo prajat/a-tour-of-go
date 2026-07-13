@@ -73,4 +73,5 @@ func main() {
 	arrayDemo()
 	mapsDemo()
 	funcDemo()
+	methodsDemo()
 }
