@@ -74,4 +74,5 @@ func main() {
 	mapsDemo()
 	funcDemo()
 	methodsDemo()
+	interfacesDemo()
 }
